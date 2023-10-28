@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <section>
+    <div class="img">
+      <img src="./login.avif" alt="doctor">
+    </div>
+  <div class="signin">
+
+    <div class="content">
+
+      <h2>Welcome Back <i class="fa-regular fa-face-smile" style="color: #fbff00;"></i></h2>
+
+      <form class="form" id="loginForm">
+
+        <div class="inputBox">
+
+          <input type="text" id="emailInp" required> <i>Email</i>
+
+        </div>
+
+        <div class="inputBox">
+
+          <input type="password" required id="passInp"> <i>Password</i>
+
+        </div>
+
+        <div class="links">Not a Member<a href="./signup.html">Signup</a>
+
+        </div>
+
+        <div class="inputBox">
+          <button type="submit">Login</button>
+
+        </div>
+
+      </form>
+      <p id="result"></p>
+    </div>
+  </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+  <script src="./login.mjs"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Appoinments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getAllAppointments()">
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./book.html">Book an Appoinment</a></li>
+            <li><a href="./all.html">All Appoinments</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div id="appointment"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+    <!-- sweet alert -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <!-- sweet alert buttons and others styling -->
+     <style>
+         .swal2-confirm:focus,
+         .swal2-deny:focus,
+         .swal2-cancel:focus,
+         .swal2-input:focus {
+             box-shadow: 0 0 4px #24232c !important;
+         }
+ 
+         .swal2-input {
+             border: 0px solid #24232c !important;
+             width: 80%;
+             margin: 1em auto;
+             padding: 0.5em;
+         }
+ 
+         .swal2-confirm {
+             background-color: #24232c;
+         }
+ 
+         div:where(.swal2-container) div:where(.swal2-loader) {
+             border-color: #24232c #fff;
+         }
+     </style>
+    <script src="./all.mjs"></script>
+    
+</body>
+</html>

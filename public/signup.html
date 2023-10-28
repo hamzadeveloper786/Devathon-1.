@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+    
+  <section>
+<div class="img">
+  <img src="./signUp.avif" alt="">
+</div>
+   <div class="signin"> 
+
+    <div class="content"> 
+
+     <h2>Hello! <i class="fa-regular fa-face-smile" style="color: #fbff00;"></i></h2> 
+
+     <form class="form" id="signupForm"> 
+
+      <div class="inputBox"> 
+
+       <input type="text" id="firstName" required> <i>First Name</i> 
+
+      </div> 
+      <div class="inputBox"> 
+
+       <input type="text" required id="lastName"> <i>Last Name</i> 
+
+      </div> 
+      <div class="inputBox"> 
+
+       <input type="email" id="email" required> <i>Email</i> 
+
+      </div> 
+
+      <div class="inputBox"> 
+
+       <input type="password" id="password" required> <i>Password</i> 
+
+      </div> 
+      
+      <div class="links">Already a Memeber <a href="./login.html">Login</a> </div>
+        
+        <div class="inputBox"> 
+          
+          <button type="submit">Signup</button>
+          
+        </div>  
+    
+  </form>
+  
+  <p id="result"></p>
+    </div> 
+
+   </div> 
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+  <script src="./signup.mjs"></script>
+
+</body>
+</html>

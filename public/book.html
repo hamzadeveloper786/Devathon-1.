@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appoinment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./book.html">Book an Appoinment</a></li>
+            <li><a href="./all.html">All Appoinments</a></li>
+        </ul>
+    </nav>
+    <fieldset>
+        <legend>
+            Book an Appoinment!
+        </legend>
+        <form onsubmit="bookApp(); return false">
+
+            <label for="docName">Doctor Name:</label>
+            <input type="text" name="docName" id="docName" placeholder="Enter Your Doctor Name:" required>
+
+            <br>
+            <label for="paName">Patient Name:</label>
+            <input type="text" name="paName" id="paName" placeholder="Enter Patient Name:" required>
+
+            <br>
+            <label for="availibility">Enter your Availibility:</label>
+            <textarea type="text" name="availibility" id="availibility"
+                placeholder="Write which day you will avaiable....." cols="30" rows="4" required></textarea>
+
+            <br>
+
+            <button type="submit">Book an Appoinment!</button>
+        </form>
+    </fieldset>
+    <div id="result"></div>
+    <script src="./book.mjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+</body>
+
+</html>
