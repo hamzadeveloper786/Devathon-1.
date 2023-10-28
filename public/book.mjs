@@ -18,6 +18,9 @@ window.bookApp = () => {
         })
         .catch(function (error) {
             // handle error
+            if(error.response.status == 401){
+                window.location.href = "/login.html"
+            }
             console.log(error.data);
             document.querySelector("#result").innerHTML = `<div class="bookingError">Error in Post Submission! </div> `
         })
